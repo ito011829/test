@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* PC,スマホ共通スタイル */
+body {
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+    font-family: "Source Sana Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+    font-size: 14px;
+}
+
+#nav-pc ul {
+    display: flex;
+    padding-left: 0;
+}
+
+#nav-pc li {
+    list-style: none;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #0d0d0d;
+}
+
+#nav-pc a:hover {
+    text-decoration: underline;
+}
+
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    height: 400px;
+}
+
+#main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2710d5;
+    color: #ffffff;
+    border-radius: 0 0 476px 0;
+    max-width: 620px;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+#main-message > h1 {
+    font-size: 60px;
+    margin: 100px 0 0 50px;
+}
+
+#main-message > p {
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+
+#main-visual > img {
+    max-width: 620px;
+    border-radius: 476px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* ミッション */
+h2 {
+    margin: 40px 0 0 0;
+}
+
+h2::after {
+    content: url("images/line.png");
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+#mission {
+    margin: 80px auto;
+}
+
+#mission-flex {
+    display: flex;
+}
+
+#mission-flex > div {
+    width: 50%;
+    margin: 20px;
+}
+
+#mission-photo {
+    width: 100%;
+}
+
+#s2dgs {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* プロダクト */
+#product {
+    background-color: #fafafa;
+    margin: 80px 0;
+    padding: 10px 40px 0px 40px;
+}
+
+#product .product-flex {
+    margin-top: 40px;
+    display: flex;
+}
+
+#product-left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+#product-right {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+#product-left > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+}
+
+#product-right > div {
+    position: relative;
+    height: 480px;
+    margin-left: 20px;
+}
+
+.product-photo {
+    width: 100%;
+}
+
+.product-explain {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    margin: 0 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-explain > h3 {
+    margin: 5px 0;
+}
+
+.product-explain > p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#product-more {
+    text-align: center;
+}
+
+#product-more a {
+    position: relative;
+    bottom: -42px;
+}
+
+/* ABOUT US */
+#aboutus {
+    margin: 80px auto;
+}
+
+#aboutus > div {
+    display: flex;
+}
+
+.culture-img {
+    width: 50%;
+    align-self: flex-start
+}
+.culture-img2 {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.culture-table {
+    margin-right: 50px;
+}
+
+.culture-num {
+    font-size: 80px;
+    color: #2710d5;
+    padding-right: 20px;
+}
+
+.culture-table th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.culture-en {
+    color: #2710d5;
+    font-size: 24px;
+}
+
+.culture-description {
+    margin: 0;
+}
+
+/* VISION */
+#vision {
+    margin: 80px auto;
+}
+
+#vision > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vision-box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.vision-box > img {
+    width: 100%;
+    position: relative;
+    z-index: 30;
+}
+
+.vision-box > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 31;
+    margin-right: 20px;
+}
+
+.vision-box > div > h4 {
+    color: #2710d5;
+    font-size: 19px;
+    margin-top: 80px;
+}
+
+.vision-box > div > h4::first-letter {
+    font-size: 40px;
+}
+
+.vision-box > div > h5 {
+    font-size: 20px;
+    margin: 0;
+} 
+
+.vision-box > div > p {
+    margin-top: 10px;
+}
