@@ -2,102 +2,160 @@
   box-sizing: border-box;
 }
 
-p {
+body {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-/* PC,スマホ共通スタイル */
-body {
-  max-width: 100%;
-  margin: 0 auto 0 auto;
-  font-family: "Noto Sans Japanese", 
-  "https://fonts.google.com/noto/specimen/Noto+Sans+JP";
+p {
+  margin: 0;
 }
 
 /* ヘッダー */
-header {
+.header-inner {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
+.header-inner a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* タイトル */
 h1 {
+  margin: 0 0 0 20px;
   font-size: 34px;
-  color: #000;
   border: solid 1px black;
-}
-
-/* ナビ　レイアウト */
-#nav-pc {
-  font-size: 34px;
-}
-
-#nav-pc ul {
-  display: flex;
   padding: 0 20px;
 }
 
-#nav-pc li {
+/* ナビゲーション */
+nav .menu {
+  display: flex;
+}
+
+nav li {
+  margin: 0 20px;
   list-style: none;
 }
 
-/* ナビリンク装飾設定 */
-h1 a {
-  text-decoration: none;
-  color: #000;
-}
-
-#nav-pc a {
-  text-decoration: none;
-  margin-left: 40px;
-  font-weight: bold;
-  color: #000;
-}
-
-/* メイン */
-#main-img {
-  max-width: 100%;
-  margin-bottom: 40px;
-}
-
-/* about */
-#about {
-  display: block;
-}
-
-.index-h2 {
-  text-align: center;
+nav a {
   font-size: 34px;
 }
 
-#about-flex {
+/* メインビジュ写真 */
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+  padding: 60px 0 40px;
+}
+
+/* About */
+.circle {
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+}
+
+.about-inner {
   display: flex;
-  margin: 80px 35px;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
-#about-profile {
-  padding: 30px 0 0 60px;
-}
-
-#about-img {
-  border-radius: 150px 150px 150px 150px;
-}
-
-h3 {
+.name {
   font-size: 24px;
+  font-weight: bold;
 }
 
-/* works */
-#works-flex {
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Works */
+.works-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  max-width:  960px;
+  margin: 0 auto;
 }
 
-#works-flex > div {
-  
+.item {
+  width: 25%;
+  margin: 0 10px;
+  padding-bottom: 40px;
 }
 
 /* フッター */
-#copyright {
+footer p {
   text-align: center;
+  margin: 20px 0;
+}
+
+/* TOPに戻るボタン */
+
+#top-btn {
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 28px 24px;
+  border-radius: 50%;
+  display: none;
+}
+/* スクロールしたときにセクションをフェードイン */
+/* section { */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+h1 {
+  font-size: 28px;
+}
+
+nav a {
+  font-size: 21px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+h2 {
+  font-size: 28px;
+  padding: 30px 0 20px;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+}
 }
